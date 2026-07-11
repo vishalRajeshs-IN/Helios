@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HELIOS Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="dashboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header>
+
+<div class="logo">
+HELIOS
+</div>
+
+<nav>
+
+<a href="#">Dashboard</a>
+<a href="#">Analytics</a>
+<a href="#">Devices</a>
+<a href="#">Reports</a>
+<a href="#">Settings</a>
+
+</nav>
+
+<div class="profile">
+
+<div class="status"></div>
+
+<span>Device Online</span>
+
+</div>
+
+</header>
+
+<!--================ HERO ================-->
+
+<section class="hero">
+
+<div class="welcome">
+
+<h1>Welcome Back, Wire We Here👋</h1>
+
+<p>
+
+Your IoT-Based Solar Power Monitoring System is currently
+running efficiently.
+
+Real-time analytics indicate that your solar panels are
+performing within the expected operating range.
+
+</p>
+
+</div>
+
+<div class="weather">
+
+<h3>Today's Weather</h3>
+
+<h1>☀️ 32°C</h1>
+
+<p>Sunny</p>
+
+<p>Solar Irradiance : 860 W/m²</p>
+
+</div>
+
+</section>
+
+<!--================ DEVICE INFORMATION ================-->
+
+<section class="cards">
+
+<div class="card">
+<h3>Voltage</h3>
+<h1>4 V</h1>
+<p>Stable</p>
+</div>
+
+<div class="card">
+<h3>Current</h3>
+<h1>0.5 A</h1>
+<p>Live</p>
+</div>
+
+<div class="card">
+<h3>Power</h3>
+<h1>10 W</h1>
+<p>Generating</p>
+</div>
+
+<div class="card">
+<h3>Efficiency</h3>
+<h1>94%</h1>
+<p>Excellent</p>
+</div>
+
+<div class="card">
+<h3>Today's Usage</h3>
+<h1>0.3 kWh</h1>
+<p>Consumed</p>
+</div>
+
+<div class="card">
+<h3>Total Energy</h3>
+<h1>16 kWh</h1>
+<p>Generated</p>
+</div>
+
+<div class="card">
+<h3>Device Health</h3>
+<h1>98%</h1>
+<p>Healthy</p>
+</div>
+
+<div class="card">
+<h3>Temperature</h3>
+<h1>33°C</h1>
+<p>Normal</p>
+</div>
+
+</section>
+
+<!--================ ALERT ================-->
+
+<section class="alert">
+
+<h2>System Status</h2>
+
+<ul>
+
+<li>✅ Device Connected Successfully</li>
+
+<li>✅ Voltage within Safe Range</li>
+
+<li>✅ No Fault Detected</li>
+
+<li>✅ Solar Panels Operating Efficiently</li>
+
+<li>✅ Cloud Synchronization Active</li>
+
+</ul>
+
+</section>
+
+<!--================ GRAPH 1 ================-->
+
+<section class="graph">
+
+<h2>Daily Energy Generation vs Efficiency</h2>
+
+<p>
+
+This graph illustrates how increasing solar panel efficiency
+improves the daily energy generation of the system.
+
+</p>
+
+<canvas id="chart1"></canvas>
+
+</section>
+
+<!--================ GRAPH 2 ================-->
+
+<section class="graph">
+
+<h2>Solar Power Variation Throughout the Day</h2>
+
+<p>
+
+Power output is lower during the morning and evening while
+reaching its maximum around noon due to peak sunlight intensity.
+
+</p>
+
+<canvas id="chart2"></canvas>
+
+</section>
+
+<!--================ GRAPH 3 ================-->
+
+<section class="graph">
+
+<h2>Weekly Energy Generation</h2>
+
+<p>
+
+Weekly energy generation increases significantly as solar
+panel efficiency improves.
+
+</p>
+
+<canvas id="chart3"></canvas>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer>
+
+<p>
+
+HELIOS © 2026
+
+</p>
+
+<p>
+
+IoT-Based Solar Power Monitoring and Analytics System
+for Performance Optimization
+
+</p>
+
+</footer>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

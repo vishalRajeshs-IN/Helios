@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELIOS Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        HELIOS
+    </div>
+
+    <div class="country">
+        🌐 US
+    </div>
+
+</header>
+
+<div class="container">
+
+    <h1>Sign In</h1>
+
+    <form id="loginForm">
+
+        <label>Device ID</label>
+
+        <input
+        type="text"
+        id="device"
+        placeholder="Enter Device ID"
+        required>
+
+        <label>Password</label>
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        required>
+
+        <button type="submit" onclick="window.location.href='dashboard.html'">
+            Continue
+        </button>
+
+    </form>
+
+    <a href="#" class="forgot">
+        Trouble Signing In?
+    </a>
+
+    <div class="divider">
+        <span>OR</span>
+    </div>
+
+    <button class="create" onclick="window.location.href='order.html'">
+        Order a New Device
+    </button>
+
+</div>
+
+<footer>
+
+    HELIOS © 2026
+
+    <span>Privacy & Legal</span>
+
+    <span>Contact</span>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("YOUR_PUBLIC_KEY");
+</script>
+</body>
+</html>
